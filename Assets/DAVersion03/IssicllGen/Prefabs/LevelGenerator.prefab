@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6864609518189642833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6864609518189642839}
+  - component: {fileID: 6864609518189642838}
+  - component: {fileID: 6864609518189642836}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6864609518189642839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864609518189642833}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6864609518189642838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864609518189642833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f288b11a4078a5040b0f6657b4b4e36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldSize: {x: 4, y: 4}
+  numberOfRooms: 20
+  roomWhiteObj: {fileID: 1975706786332780, guid: a1fe431a2bc4a2940b2503b8f131da18,
+    type: 3}
+  mapRoot: {fileID: 0}
+  TileSize: 16
+--- !u!114 &6864609518189642836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864609518189642833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87595009fef42294980701616981714c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartRooms:
+  - {fileID: 2800000, guid: 0fd532369913936468d7b76e6115dd78, type: 3}
+  BasicRooms:
+  - {fileID: 2800000, guid: 5d4c4f40a1564c444887e7999c48d18d, type: 3}
+  - {fileID: 2800000, guid: dc7b8578c102bd546bd34dc9a366a8f0, type: 3}
+  - {fileID: 2800000, guid: 73332cb71d001244fb5ab7bc35af61a8, type: 3}
+  - {fileID: 2800000, guid: 99ae6df318064444bb24dd898bd356a5, type: 3}
+  - {fileID: 2800000, guid: 1d48a76d657a5804c9beacc313aec3ad, type: 3}
+  BossRooms:
+  - {fileID: 2800000, guid: c9f8c31371dc1994391457a24df43306, type: 3}
+  SpecialRooms:
+  - {fileID: 2800000, guid: 1300f31affd66804188743cdfd3a7bbb, type: 3}
+  RoomObj: {fileID: 1038065722679700, guid: 092b915af527d594aa11083a065a8de8, type: 3}
+  TileSize: 16
+  roomDimensions: {x: 272, y: 144}
+  gutterSize: {x: 144, y: 64}
